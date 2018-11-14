@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+<!-- Main page content -->
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">NSY Blog
+	  <span class="page-title-span">|</span>
+	  <span class="page-title-span">Home</span>
+	  </span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Portfolio</a>
+        <a class="mdl-navigation__link" href="#">About</a>
+        <a class="mdl-navigation__link" href="#">Contact</a>
+		<!-- Colored raised button -->
+        <button  id="signoutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+		<a href="login.html" target="mainframe">Sign Out</a>
+		<!--For modern browsers-->
+        <i class="material-icons">account_circle</i>
+		</button>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+  </div>
+   <div class="mainDiv" align="center">
+<h1 id="fireHeading" align="left"> firebase web app</h1>
+<textarea id="mainText" placeholder="Enter text her.."></textarea>
+<button id="submitBtn" onclick="submitClick()"></button>
+
+<h1> All users</h1>
+<table border="thick">
+<thead>
+<tr>
+<td>Name</td>
+<td>Email</td>
+<td>Action</td>
+</tr>
+</thead>
+<tbody id="table_body">
+</tbody>
+</table>
+</div>
+</div>
+<p>My first paragraph.</p>
+
+<!-- login Dialog content -->
+<dialog id="loginDialog" class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Sign In</h4>
+    <div class="mdl-dialog__content">
+<!-- display error message field-->
+	<p id="loginError">Error message</p>	
+<!-- text fields -->
+	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="loginEmail">
+    <label class="mdl-textfield__label" for="sample3">Email</label>
+  </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="loginPassword">
+    <label class="mdl-textfield__label" for="sample3">Password</label>
+  </div>
+<!-- action section--> 
+  </div>
+  <!-- MDL Spinner Component -->
+    <div class="mdl-dialog__actions">  
+ <!-- Colored raised button -->
+<button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Sing In</button>
+<div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+  </dialog>
+ <!-- loading-->
+<div class="login-cover">Login...
+<!-- MDL Spinner Component -->
+<div class="mdl-spinner mdl-js-spinner is-active"></div>
+</div>
+<!-- main content-->
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
+</html>

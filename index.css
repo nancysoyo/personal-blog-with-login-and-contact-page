@@ -1,0 +1,105 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background:#92bde7;
+	color:#485e74;
+	font-family:"segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+	max-width:1170px;
+}
+.page-title-span{
+	margin-left:10px;
+	
+}
+.material-icons{
+	margin-left:10px;
+}
+a {
+text-decoration:none;
+color:white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+	float: left;
+	width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+	background-image: url("Untitled.jpg");
+	width: 100%;
+	padding: 20px;
+	}
+	#img1{
+	background-image: url("download.jpg");
+	width: 100%;
+	height: 500px;
+	padding: 20px;	
+	}
+	#mainText{
+		width: 100%;
+	padding: 20px;
+	float: left;
+	}
+	#submitBtn{
+		width: 100px;
+		height: 40px;
+	}
+	.img2 {
+		background-image: url("adult-beautiful-beauty-413727.jpg");
+		width: 100%;
+		padding: 20px;
+		}
+
+		.img3 {
+			background-image: url("aroma-bottle-close-up-1190829.jpg");
+			width: 100%;
+			padding: 20px;
+			}
+	
+			.img4 {
+				background-image: url("book-close-up-desk-734968.jpg");
+				width: 100%;
+				padding: 20px;
+				}
+		
+
+  
+  /* Add a card effect for articles */
+  .card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+	padding: 20px;
+	text-align: center;
+	background: #c9e6ff;
+	margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn { 
+	  width: 100%;
+	  padding: 0;
+	}
+  }
